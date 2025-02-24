@@ -1,0 +1,15 @@
+The program starts by creating a 20x20 grid filled with '-' character signifying unassigned grid.
+Then the frist argument is grid size which is stored for later use. Now we print out the word list
+provided by iterating through the words. From this point the program iterates through the words
+provided in the argument to place them. When finding a valid location for a word the first step is 
+randomizing a direction then going through all possible locations bounded by the grid size given 
+the random direction. If no location is found then the program goes to the next direction and goes 
+through all the new possible loactions. If after all directions and all possible locations for each
+directions are found invalid then the program terminates printing the word which couldn't be mapped 
+to the grid. Assuming all words could be mapped then the program iterates through the grid within 
+the bounds of the grid size and replaces and '-' characters with a random character. We now have a 
+completed grid and the last step is to print out the grid.  
+
+The word search is ran using
+./WordSearchGenerator 5 Jack Jill
+where 5 is the grid size and the rest are words in the word list
